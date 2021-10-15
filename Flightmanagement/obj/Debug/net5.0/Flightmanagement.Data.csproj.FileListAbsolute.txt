@@ -1,0 +1,12 @@
+C:\Users\Tyler\source\repos\Flightmanagement\obj\Debug\net5.0\Flightmanagement.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Tyler\source\repos\Flightmanagement\obj\Debug\net5.0\Flightmanagement.Data.AssemblyInfoInputs.cache
+C:\Users\Tyler\source\repos\Flightmanagement\obj\Debug\net5.0\Flightmanagement.Data.AssemblyInfo.cs
+C:\Users\Tyler\source\repos\Flightmanagement\obj\Debug\net5.0\Flightmanagement.Data.csproj.CoreCompileInputs.cache
+C:\Users\Tyler\source\repos\Flightmanagement\bin\Debug\net5.0\Flightmanagement.Data.deps.json
+C:\Users\Tyler\source\repos\Flightmanagement\bin\Debug\net5.0\Flightmanagement.Data.dll
+C:\Users\Tyler\source\repos\Flightmanagement\bin\Debug\net5.0\ref\Flightmanagement.Data.dll
+C:\Users\Tyler\source\repos\Flightmanagement\bin\Debug\net5.0\Flightmanagement.Data.pdb
+C:\Users\Tyler\source\repos\Flightmanagement\obj\Debug\net5.0\Flightmanagement.Data.dll
+C:\Users\Tyler\source\repos\Flightmanagement\obj\Debug\net5.0\ref\Flightmanagement.Data.dll
+C:\Users\Tyler\source\repos\Flightmanagement\obj\Debug\net5.0\Flightmanagement.Data.pdb
+C:\Users\Tyler\source\repos\Flightmanagement\obj\Debug\net5.0\Flightmanagement.Data.csproj.AssemblyReference.cache
