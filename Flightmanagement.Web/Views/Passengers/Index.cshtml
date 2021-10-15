@@ -1,0 +1,54 @@
+﻿<!--
+Index HTML page for Passengers
+-->
+
+@model IEnumerable<Flightmanagement.Web.Models.PassengerViewModel>
+
+@{
+    ViewData["Title"] = "Passengers";
+}
+
+<form asp-area="" asp-controller="Passengers" asp-action="Create" method="get">
+    <button class="button">
+        Add Passenger
+    </button>
+</form>
+
+<div class="text-center">
+    <h1>Passengers</h1>
+    <br />
+    <table class="table">
+        <thead>
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.Name)</th>
+                <th>@Html.DisplayNameFor(model => model.Job)</th>
+                <th>@Html.DisplayNameFor(model => model.Email)</th>
+                <th>@Html.DisplayNameFor(model => model.Age)</th>
+                <th>@Html.DisplayNameFor(model => model.Booking_info)</th>
+                <th>@Html.DisplayNameFor(model => model.Flight_id)</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var passenger in Model)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(modelitem => passenger.Name)</td>
+                    <td>@Html.DisplayFor(modelitem => passenger.Job)</td>
+                    <td>@Html.DisplayFor(modelitem => passenger.Email)</td>
+                    <td>@Html.DisplayFor(modelitem => passenger.Age)</td>
+                    <td>@Html.DisplayFor(modelitem => passenger.Booking_info)</td>
+                    @if (passenger.Booking_info != "")
+                    {
+                        <td>@Html.DisplayFor(modelitem => passenger.Flight_id)</td>
+                    }
+                    else
+                    {
+                        <td>@Html.DisplayText(" ")</td>
+                    }
+                    <td>@Html.ActionLink("Details", "Details", new { id = passenger.Id })</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

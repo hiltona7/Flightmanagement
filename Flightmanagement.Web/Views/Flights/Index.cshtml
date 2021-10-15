@@ -1,0 +1,54 @@
+﻿<!--
+Index HTML page for Flights
+-->
+
+@model IEnumerable<Flightmanagement.Web.Models.FlightViewModel>
+
+@{
+    ViewData["Title"] = "Flights";
+}
+<form asp-area="" asp-controller="Flights" asp-action="Create" method="get">
+    <button class="button">
+        Add Flight
+    </button>
+</form>
+
+<div class="text-center">
+    <h1>Flights</h1>
+    <br />
+    <table class="table">
+        <thead>
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.Id)</th>
+                <th>@Html.DisplayNameFor(model => model.Flight_number)</th>
+                <th>@Html.DisplayNameFor(model => model.Depart_date)</th>
+                <th>@Html.DisplayNameFor(model => model.Arrival_date)</th>
+                <th>@Html.DisplayNameFor(model => model.Depart_time)</th>
+                <th>@Html.DisplayNameFor(model => model.Arrival_time)</th>
+                <th>@Html.DisplayNameFor(model => model.Depart_airport)</th>
+                <th>@Html.DisplayNameFor(model => model.Arrival_airport)</th>
+                <th>@Html.DisplayNameFor(model => model.Current_capacity)</th>
+                <th>@Html.DisplayNameFor(model => model.Total_capacity)</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var flight in Model)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(modelitem => flight.Id)</td>
+                    <td>@Html.DisplayFor(modelitem => flight.Flight_number)</td>
+                    <td>@Html.DisplayFor(modelitem => flight.Depart_date)</td>
+                    <td>@Html.DisplayFor(modelitem => flight.Arrival_date)</td>
+                    <td>@Html.DisplayFor(modelitem => flight.Depart_time)</td>
+                    <td>@Html.DisplayFor(modelitem => flight.Arrival_time)</td>
+                    <td>@Html.DisplayFor(modelitem => flight.Depart_airport)</td>
+                    <td>@Html.DisplayFor(modelitem => flight.Arrival_airport)</td>
+                    <td>@Html.DisplayFor(modelitem => flight.Current_capacity)</td>
+                    <td>@Html.DisplayFor(modelitem => flight.Total_capacity)</td>
+                    <td>@Html.ActionLink("Details", "Details", new { id = flight.Id })</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

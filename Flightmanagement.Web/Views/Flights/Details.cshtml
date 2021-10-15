@@ -1,0 +1,85 @@
+﻿<!--
+Details HTML page for Flights
+-->
+
+@model Flightmanagement.Data.Flight
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<div>
+    <h1>Flight Details</h1>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Flight_number)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Flight_number)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Depart_date)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Depart_date)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Arrival_date)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Arrival_date)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Depart_time)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Depart_time)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Arrival_time)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Arrival_time)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Depart_airport)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Depart_airport)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Arrival_airport)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Arrival_airport)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Current_capacity)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Current_capacity)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Total_capacity)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Total_capacity)
+        </dd>
+    </dl>
+</div>
+<div>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }, new { @class = "button" })
+    @Html.ActionLink("Delete", "Delete", new { id = Model.Id }, new { @class = "button" })
+    <form asp-area="" asp-controller="Flights" asp-action="Index">
+        <button class="button">
+            Back to Flights
+        </button>
+    </form>
+</div>

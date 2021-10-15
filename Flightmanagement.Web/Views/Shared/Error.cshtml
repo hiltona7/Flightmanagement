@@ -1,0 +1,23 @@
+﻿<!--
+Error page view    
+-->
+
+@model ErrorViewModel
+
+@{
+    ViewData["Title"] = "Error";
+}
+
+<div class="list-header clearfix">
+    <div class="text-center">
+        <span>Error</span>
+        <div class="alert alert-error">
+            An unexpected error has occurred. Please contact the system administrator.
+        </div>
+        <form asp-area="" asp-controller="Home" asp-action="Index">
+            <button class="button">
+                Back to Home
+            </button>
+        </form>
+    </div>
+</div>

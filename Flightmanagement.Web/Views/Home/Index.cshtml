@@ -1,0 +1,26 @@
+﻿<!--
+HTML Page for the Home View 
+-->
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to the Flight Management System</h1>
+    <br />
+    <div class="dropdown">
+        <button class="dropbtn">Flights</button>
+        <div id="myDropdown" class="dropdown-content">
+            <a class="nav-link text-dark" asp-area="" asp-controller="Flights" asp-action="Index">View Flights</a>
+            <a class="nav-link text-dark" asp-area="" asp-controller="Flights" asp-action="Create">Create Flight</a>
+        </div>
+        <br />
+        <br />
+        <button class="dropbtn">Passengers</button>
+        <div id="myDropdown2" class="dropdown-content">
+            <a class="nav-link text-dark" asp-area="" asp-controller="Passengers" asp-action="Index">View Passengers</a>
+            <a class="nav-link text-dark" asp-area="" asp-controller="Passengers" asp-action="Create">Create Passenger</a>
+        </div>
+    </div>
+</div>
